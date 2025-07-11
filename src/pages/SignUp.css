@@ -1,0 +1,84 @@
+.signup-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  z-index: 1;
+  position: relative;
+}
+
+/* Icônes flottantes en arrière-plan */
+.bg-icon {
+  position: absolute;
+  opacity: 0.1;
+  color: #4a6bff;
+  font-size: 10rem;
+  z-index: 0;
+}
+
+.bg-icon:nth-child(1) {
+  top: 10%;
+  left: 10%;
+}
+
+.bg-icon:nth-child(2) {
+  bottom: 15%;
+  right: 10%;
+  transform: rotate(45deg);
+}
+
+.bg-icon:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+}
+
+/* Style amélioré pour les inputs */
+.form-control {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.form-control:focus {
+  border-color: #4a6bff;
+  box-shadow: 0 0 0 0.25rem rgba(74, 107, 255, 0.25);
+}
+
+/* Bouton avec gradient */
+.btn-primary {
+  background: linear-gradient(90deg, #4a6bff, #8b4dff);
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Icônes dans les inputs */
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.input-with-icon input {
+  padding-left: 45px !important;
+}

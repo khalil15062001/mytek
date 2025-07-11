@@ -12,6 +12,7 @@ import DashboardAdmin from "./pages/DhashboardAdmin";
 import DashboardUser from "./pages/dashboardUser";
 import UserListPage from "./pages/UserListPage";
 import ProductManager from "./pages/ProductManager";
+import PowerBi from "./pages/powerbi";
 // Mock data
 const mockUsers = [
   { id: 1, username: 'admin', email: 'admin@example.com', role: 'ADMIN', password: 'secret' },
@@ -37,6 +38,7 @@ function MainLayout() {
         <Route path="/users/add" element={<AddUser />} />
         <Route path="/users/edit/:id" element={<EditUser />} />
         <Route path="/products" element={<ProductManager />} />
+        <Route path="/powerbi" element={<PowerBi />} />
       </Routes>
     </div>
   );
